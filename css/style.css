@@ -1,0 +1,45 @@
+body{
+    overflow: hidden;
+}
+.trans{
+transition: all .4s ;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+}
+.item-title{
+    position: absolute;
+    top: 150%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.item:hover .item-title{
+    top: 0;
+}
+.bg-eee{
+    background-color: rgba(238, 238, 238, 0.852);
+}
+ul{
+    list-style: none;
+}
+nav{
+    left:0;
+    z-index: 99;
+    
+}
+nav span{
+    padding:4px;
+    width: 3rem;
+    height: 3rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 1px solid #eee;
+}
+nav li:hover{
+    color: #fff !important;
+}
+.point,.col-md-3{
+    cursor: pointer;
+}

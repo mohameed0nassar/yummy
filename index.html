@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="imgs/pngegg.png" type="image/x-icon">
+    <!--style sheet links-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/load.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="text-bg-dark">
+    <div class="loading">
+      <div class="position-fixed top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center bg-dark z-3">
+        <span class="loader"></span>
+      </div>
+    </div><!--end of loading-->
+    <!--nav bar-->
+    <nav class="position-fixed top-0 bottom-0 d-flex align-items-center z-2">
+      <div class="position-absolute mb-5 me-5 pb-5 bottom-0 start-0 point ms-3 ">
+        <i class="fa-brands fs-5  me-2 fa-facebook"></i>
+        <i class="fa-brands fs-5  me-2 fa-twitter"></i>
+        <i class="fa-solid  fs-5 fa-globe"></i>
+    </div>
+    <div class="position-absolute mt-2 bottom-0 start-0 ms-2 ">
+        <p class="">Copyright © 2023<br> All Rights Reserved.</p>
+    </div>
+      <i class="fa-solid fa-close position-absolute mt-2 me-5 pe-3 top-0 end-0 point ms-0 "></i>
+      <ul class='h-100 d-flex flex-column justify-content-center pt-4 gap-2 bg-black pe-5 m-0  border shadow-sm text-secondary'>
+        <li class="point">Main</li>
+        <li class="point">Search</li>
+        <li class="point">Area</li>
+        <li class="point">Ingredients</li>
+        <li class="point">Categories</li>
+        <li class="point">contact</li>
+      </ul>
+      <span class="trans bg-dark point"><img src="imgs/pngegg.png" alt="" class="w-100"></span>
+    </nav><!--end of nav-->
+    <!--description section-->
+    <section class="d-none" id="description" >
+      <div class="container my-5 ">
+        <div class="row py-5">
+  
+        </div>
+      </div>
+    </section><!--end of description-->
+    <!--main section-->
+  <section id="main" >
+    <div class="container my-4">
+      <div class="row g-3">
+        
+      </div>
+    </div>
+  </section><!--end of main-->
+ <!--search section-->
+  <section class="d-none" id="search">
+<div class="container mt-5">
+  <div class="row g-3 mb-5">
+    <div class="col-md-6">
+      <div><input id="searchByName" type="text" class="form-control"></div>
+    </div>
+    <div class="col-md-6">
+      <div><input id="searchByLetter" type="text" maxlength="1" class="form-control"></div>
+    </div>
+  </div>
+  <div class="row g-3" id="displaySearch">
+  </div>
+</div>
+  </section><!--end of search-->
+<!--area section-->
+<section class="d-none" id="area">
+    <div class="container my-4">
+      <div class="row g-3">
+      
+      
+      </div>
+    </div>
+</section><!--end of area-->
+<!--ingredients section-->
+  <section class="d-none" id="ingredients">
+  <div class="container my-4">
+    <div class="row g-3">
+      
+      
+      </div>
+      </div>
+</section><!--end of ingredients-->
+<!--categories section-->
+<section class="d-none" id="categories">
+  <div class="container my-4">
+    <div class="row g-3">
+      
+    </div>
+  </div>
+</section><!--end of categories-->
+<!--contact section-->
+<section id="contact" class="vh-100 d-none">
+<div class="container h-100 d-flex align-items-center">
+  <div class="row g-3 ">
+    
+      
+        
+
+        <!--user name-->
+       <div class="col-md-6 ">
+          <input type="text" id="nameInp" class="form-control mb-1 "
+            placeholder="Your Name" />
+            <span class=" d-block text-end text-danger fa-xs mt-3 nameUp"></span>
+       </div>
+        <!-- Email input -->
+        <div class="col-md-6 ">
+          <input type="email" id="emailInp" class="form-control mb-1"
+          placeholder="Enter a valid email address" />
+          <span class=" d-block text-end text-danger fa-xs mt-3 emailUp"></span>
+        </div>
+        <!--phone-->
+        <div class="col-md-6 ">
+          <input type="text"  id="phoneInp" class="form-control mb-1"
+          placeholder="Your Phone Number" />
+          <span class=" d-block text-end text-danger fa-xs mt-3 phoneUp"></span>
+          
+        </div>
+        <!--age-->
+        <div class="col-md-6 ">
+          <input type="number" min="10" max="100" id="ageInp" class="form-control mb-1"
+          placeholder="Your Age" />
+          <span class=" d-block text-end text-danger fa-xs mt-3 ageUp"></span>
+          
+        </div>
+
+        <!-- Password input -->
+        <div class="col-md-6 ">
+          <input type="password" id="passInp" class="form-control mb-1"
+          placeholder="Enter Your Password" />
+          <span class=" d-block text-end text-danger fa-xs mt-3 passUp"></span>
+        </div>
+        <!-- rePassword input -->
+        <div class="col-md-6 ">
+          <input type="password" id="rePassInp" class="form-control mb-1"
+          placeholder="reEnter Your password" />
+          <span class=" d-block text-end text-danger fa-xs mt-3 rePassUp"></span>
+        </div>
+          
+       
+        <div class="text-center mt-4 col-12 ">
+          <button  disabled class="btn  btn-outline-danger  px-5 py-2 mb-3 "
+            >Submit</button>
+        </div>
+
+      
+    </div>
+  </div>
+</section><!--contact-->
+
+<!--script links-->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
